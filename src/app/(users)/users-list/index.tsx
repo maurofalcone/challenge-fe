@@ -20,6 +20,7 @@ import { useDebounce } from "@/app/utils/hooks/useDebounce";
 import { PAGES } from "@/app/utils/constants/routes";
 import { useIsMobile } from "@/app/utils/hooks/useIsMobile";
 import Box from "@/app/components/shared/box";
+import FavoriteButtonWrapper from "@/app/components/shared/ui/buttons/favorite-button-wrapper";
 
 interface Props {
   initialData: UserApiResponse;
@@ -151,6 +152,29 @@ const UsersList: FC<Props> = ({ initialData }) => {
         ),
         enableSorting: false,
         minSize: 250,
+      },
+      {
+        accessorKey: "favorite",
+        cell: ({ row }) => {
+          const key = row.original.uuid.toString();
+          return (
+            <div className={styles.favoriteCta}>
+              <FavoriteButtonWrapper
+                email={row.original.email}
+                firstName={row.original.firstName}
+                id={key}
+                image={row.original.image}
+                username={row.original.username}
+                gender={row.original.gender}
+                birthDate={row.original.birthDate}
+                age={row.original.age}
+              />
+            </div>
+          );
+        },
+        header: () => null,
+        enableSorting: false,
+        size: Number.MAX_SAFE_INTEGER,
       },
     ],
     []

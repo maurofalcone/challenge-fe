@@ -1,0 +1,55 @@
+.root {
+  position: relative;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.formContainer {
+  display: flex;
+  gap: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  align-items: center;
+
+  @media (max-width: 767px) {
+    justify-content: space-between;
+  }
+}
+
+.header {
+  display: flex;
+  gap: 10px;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.profilePic {
+  border-radius: 50%;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+.link {
+  cursor: pointer;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.favoriteCta {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 95%;
+}
+
+.favoritesLink {
+  text-decoration: underline;
+  font-weight: 500;
+}

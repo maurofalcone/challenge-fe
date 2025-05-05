@@ -1,0 +1,58 @@
+.root {
+  position: relative;
+  background-color: #FAFAFA;
+}
+
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(100% - 40px);
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  gap: 10px;
+  z-index: 2;
+}
+
+.table {
+  display: grid;
+}
+
+.headerContainer {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.headerEnabled {
+  cursor: pointer;
+  user-select: none;
+}
+
+.header {
+  display: grid;
+  background: #FAFAFA;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  border: 1px solid #E5E7EB;
+  border-radius: 8px;
+  height: 40px;
+}
+
+.header tr {
+  display: flex;
+  width: 100%;
+}
+
+.row:nth-child(even) {
+  background-color: #F3F4F6;
+}
+
+.row {
+  border-bottom: 1px solid #E5E7EB;
+  color: #374151;
+}

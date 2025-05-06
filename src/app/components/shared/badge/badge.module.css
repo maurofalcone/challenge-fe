@@ -1,0 +1,23 @@
+.root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    min-width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    background-color: #3d444d;
+    color: #FAFAFA;
+}
+
+.label {
+    font-weight: 700;
+}
+
+.label, .description {
+    font-size: 12px;
+}
+
+.description {
+    font-weight: 300;
+}

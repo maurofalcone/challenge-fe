@@ -20,7 +20,7 @@ import { useDebounce } from "@/app/utils/hooks/useDebounce";
 import { PAGES } from "@/app/utils/constants/routes";
 import { useIsMobile } from "@/app/utils/hooks/useIsMobile";
 import Box from "@/app/components/shared/box";
-import FavoriteButtonWrapper from "@/app/components/shared/ui/buttons/favorite-button-wrapper";
+import FavoriteButtonWrapper from "@/app/components/ui/buttons/favorite-button-wrapper";
 
 interface Props {
   initialData: UserApiResponse;

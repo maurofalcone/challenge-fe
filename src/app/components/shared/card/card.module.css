@@ -1,0 +1,30 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #E5E7EB;
+  border-radius: 12px;
+  max-width: 320px;
+  overflow: hidden;
+  background-color: #FAFAFA;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.children {
+  padding: 30px 10px 20px;
+}
+
+.imageContainer {
+  position: relative;
+  background-color: #3d444d;
+  min-height: 100px;
+}
+
+.img {
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #FAFAFA;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+}

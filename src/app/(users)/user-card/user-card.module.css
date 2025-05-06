@@ -1,0 +1,36 @@
+.group {
+  display: flex;
+  gap: 10px;
+  background-color: #3d444d;
+  border-radius: 8px;
+  margin-top: 12px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-top: 20px;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headline {
+  font-size: 1.5rem;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.email {
+  display: flex;
+  gap: 5px;
+}

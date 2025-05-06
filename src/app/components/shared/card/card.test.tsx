@@ -4,6 +4,7 @@ import Card from ".";
 
 // Mockeo next/image para que no rompa el entorno del test.
 vi.mock("next/image", () => ({
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   default: (props: any) => {
     return <img {...props} />;
   },

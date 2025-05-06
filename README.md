@@ -34,12 +34,13 @@ Visitar [http://localhost:3000](http://localhost:3000).
 npm run test
 ```
 
-## Trouble Shooting
+## Troubleshooting & Implementation Details
 
+- Se utilizo la ultima version estable de Nextjs con soporte de Turbopack para optimizar el desarrollo y build de la app.
 - Para una mejor visualizacion, en cuanto a tamaño y nitidez, se redujo el numero de filas visibles (16).
 - No se ha utilizado el REST API de Github ya que dicha API no soporta sorting ni busqueda/filtros.
-- No se ha implementado styled-componenets ya que no soporta SSR, lo cual echa a perder las ventajas de usar Nextjs.
-- Se opto por utilizar [https://dummyjson.com](Dummy JSON) ya que soporta ordenamiento, filtros y paginación.
+- No se ha implementado styled-components ya que no soporta SSR, lo cual echa a perder las ventajas de usar Nextjs.
+- Se opto por utilizar [Dummy JSON](https://dummyjson.com) ya que soporta ordenamiento, filtros y paginación.
 - Dado el número de componentes, no se han cubierto todos con tests, pero se incluyeron pruebas unitarias representativas para cada tipo (utils, contexts, components, pages).
 
 ## Future work
@@ -49,7 +50,7 @@ npm run test
 - Crear mas unit test para aumentar el coverage.
 - Posibilidad de añadir shadcn y tailwind para mejorar el estilo.
 - Añadir animaciones de carga como Skeleton.
-- Actualizar favicon.
+- Actualizar favicon y metadata en cada pagina.
 - Mejorar el manejo de errores.
 - Añadir error boundary.
 - Encapsular logica del componente en un custom hook. Por ejemplo para manejar la lista de usuarios, ordenamiento y filtro en el homepage.

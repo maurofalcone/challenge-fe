@@ -11,16 +11,14 @@ import Link from "next/link";
 import Image from "next/image";
 import FavoritesListIcon from "../../assets/wishlist-list-favorite.svg";
 import { keepPreviousData, useInfiniteQuery } from "@tanstack/react-query";
-
-import TextInput from "@/app/components/shared/form/text-input";
 import styles from "./users-list.module.css";
-import VirtualizedTable from "@/app/components/shared/tables/virtualized-table";
-import { useDebounce } from "@/app/utils/hooks/useDebounce";
-
-import { PAGES } from "@/app/utils/constants/routes";
-import { useIsMobile } from "@/app/utils/hooks/useIsMobile";
 import Box from "@/app/components/shared/box";
 import FavoriteButtonWrapper from "@/app/components/ui/buttons/favorite-button-wrapper";
+import TextInput from "@/app/components/shared/form/text-input";
+import { PAGES } from "@/app/utils/constants/routes";
+import VirtualizedTable from "@/app/components/shared/tables/virtualized-table";
+import { useDebounce } from "@/app/utils/hooks/useDebounce";
+import { useIsMobile } from "@/app/utils/hooks/useIsMobile";
 
 interface Props {
   initialData: UserApiResponse;

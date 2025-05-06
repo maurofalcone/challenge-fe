@@ -99,7 +99,7 @@ const UsersList: FC<Props> = ({ initialData }) => {
               <Link
                 className={styles.link}
                 target="_blank"
-                href={row.original.email}
+                href={row.original.image}
               >
                 {row.original.username}
               </Link>
